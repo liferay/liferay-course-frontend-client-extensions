@@ -18,15 +18,14 @@
             },
             "dateCreated": "2023-05-04T21:49:04Z",
             "dateModified": "2023-05-04T21:49:04Z",
-            "description": "Is there any company that you have partnered with in order to do little adjustments to my frames?",
             "externalReferenceCode": "TICKET_1",
             "priority": {
                 "key": "minor",
                 "name": "Minor"
             },
             "region": {
-                "key": "lATAM",
-                "name": "LATAM"
+                "key": "eMEA",
+                "name": "EMEA"
             },
             "status": {
                 "code": 0,
