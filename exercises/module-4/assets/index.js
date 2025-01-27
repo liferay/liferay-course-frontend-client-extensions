@@ -162,7 +162,7 @@ class CustomElement extends HTMLElement {
 }
 
 // Define the custom element
-const ELEMENT_NAME = 'liferay-sample-custom-element-4';
+const ELEMENT_NAME = 'liferay-clarity-custom-element';
 
 if (!customElements.get(ELEMENT_NAME)) {
 	customElements.define(ELEMENT_NAME, CustomElement);
