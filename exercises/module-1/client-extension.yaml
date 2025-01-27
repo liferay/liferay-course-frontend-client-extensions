@@ -1,7 +1,7 @@
 assemble:
     - from: build/static
       into: static
-liferay-sample-custom-element-4:
+liferay-clarity-custom-element:
     friendlyURLMapping: liferay-clarity-custom-element
     htmlElementName: liferay-clarity-custom-element
     instanceable: false
