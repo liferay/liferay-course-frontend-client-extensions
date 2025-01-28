@@ -29,26 +29,13 @@ module.exports = {
 	},
 	mode: DEVELOPMENT ? 'development' : 'production',
 	module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/, // Process .js and .jsx files
-                exclude: /node_modules/, // Exclude dependencies
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                    },
-                },
-            },
-            {
-                test: /\.css$/, // Process .css files
-                use: ['style-loader', 'css-loader'],
-            },
-        ],
-    },
-    resolve: {
-        extensions: ['.js', '.jsx'], // Add .jsx to extensions
-    },
+		rules: [
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
+	},
 	optimization: {
 		minimize: !DEVELOPMENT,
 	},
