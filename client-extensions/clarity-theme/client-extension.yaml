@@ -1,10 +1,12 @@
 assemble:
     - from: build/buildTheme/img
       into: static/img
-liferay-clarity-theme-css:
+    - from: assets
+      into: static
+clarity-theme:
     clayURL: css/clay.css
     mainURL: css/main.css
-    name: Liferay Clarity Theme CSS
+    name: Clarity Theme CSS
     type: themeCSS
 clarity-theme-favicon:
     name: Clarity Theme Favicon
