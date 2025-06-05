@@ -1,4 +1,8 @@
 {
+	"devDependencies": {
+		"webpack": "5.90.1",
+		"webpack-cli": "5.1.4"
+	},
 	"dependencies": {
 	},
 	"liferayDesignPack": {
@@ -6,5 +10,9 @@
 	},
 	"main": "package.json",
 	"name": "@liferay/clarity-theme",
-	"version": "0.0.0"
+	"private": true,
+	"scripts": {
+		"build": "webpack"
+	},
+	"version": "0.1.0"
 }
