@@ -2,12 +2,8 @@
     "private": true,
     "workspaces": {
         "packages": [
-            "client-extensions/liferay-clarity-theme-css",
-            "client-extensions/liferay-clarity-global-css",
-            "client-extensions/liferay-clarity-global-css-2",
-            "client-extensions/liferay-clarity-global-js",
-            "client-extensions/liferay-sample-custom-element-4",
-            "exercises/module-4"
+            "client-extensions/clarity-theme",
+            "client-extensions/clarity-ticketing-ui"
         ]
     }
 }
