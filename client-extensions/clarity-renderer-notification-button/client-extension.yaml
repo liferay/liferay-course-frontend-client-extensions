@@ -1,0 +1,7 @@
+assemble:
+    -   from: build/static
+        into: static
+clarity-renderer-notification-button:
+    name: Clarity Renderer Notification Button
+    type: fdsCellRenderer
+    url: index.*.js

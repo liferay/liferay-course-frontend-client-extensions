@@ -18,37 +18,20 @@ module.exports = {
 	},
 	devtool: DEVELOPMENT ? 'source-map' : false,
 	entry: {
-		index: './index.js',
-	},
-	externals: {
-		'react': 'react',
-		'react-dom': 'react-dom',
+		index: './src/index.ts',
 	},
 	experiments: {
 		outputModule: true,
 	},
 	mode: DEVELOPMENT ? 'development' : 'production',
 	module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/, // Process .js and .jsx files
-                exclude: /node_modules/, // Exclude dependencies
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                    },
-                },
-            },
-            {
-                test: /\.css$/, // Process .css files
-                use: ['style-loader', 'css-loader'],
-            },
-        ],
-    },
-    resolve: {
-        extensions: ['.js', '.jsx'], // Add .jsx to extensions
-    },
+		rules: [
+			{
+				test: /\.ts$/i,
+				use: ['ts-loader'],
+			},
+		],
+	},
 	optimization: {
 		minimize: !DEVELOPMENT,
 	},
@@ -59,6 +42,9 @@ module.exports = {
 			module: true,
 		},
 		filename: WEBPACK_SERVE ? '[name].js' : '[name].[contenthash].js',
+		library: {
+			type: 'module',
+		},
 		path: path.resolve('build', 'static'),
 	},
 	plugins: [
