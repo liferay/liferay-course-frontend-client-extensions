@@ -1,0 +1,3 @@
+Bundle-Name: commerce-context-layout-reindex-patch
+Bundle-SymbolicName: com.liferay.fbo.patch.commerce.context.layout.reindex
+Bundle-Version: 1.0.0
