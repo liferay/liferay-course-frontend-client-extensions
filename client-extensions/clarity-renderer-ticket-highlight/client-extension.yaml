@@ -1,0 +1,7 @@
+assemble:
+    -   from: build/static
+        into: static
+clarity-renderer-ticket-highlight:
+    name: Clarity Renderer Ticket Highlight
+    type: fdsCellRenderer
+    url: index.*.js

@@ -1,0 +1,3 @@
+clarity-hot-tickets-fds-filter:
+    baseURL: http://localhost:3000
+    url: index.js

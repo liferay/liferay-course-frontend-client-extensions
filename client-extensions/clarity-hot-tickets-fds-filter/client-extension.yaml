@@ -1,0 +1,7 @@
+assemble:
+    -   from: build/static
+        into: static
+clarity-hot-tickets-fds-filter:
+    name: Clarity Hot Tickets FDS Filter
+    type: fdsFilter
+    url: index.*.js
